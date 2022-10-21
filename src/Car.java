@@ -1,10 +1,8 @@
-import transport.Car;
-
-public class Main {
+public class Car {
     public static void main(String[] args) {
 
-        Car[] cars = new Car[5];
-        cars[0] = new Car("Lada",
+        transport.Car[] cars = new transport.Car[5];
+        cars[0] = new transport.Car("Lada",
                 "Grande", 1.7,
                 "Черный", 2015,
                 "Россия",
@@ -12,14 +10,14 @@ public class Main {
                 5, false,
                 "Передний", null,null );
 
-        cars[1] = new Car("BMW", "Z8",
+        cars[1] = new transport.Car("BMW", "Z8",
                 3.0, "Черный",
                 2021, "Германия",
                 "a888aa", "Седан",
                 5, false,
                 "Передний", null,null );
 
-        cars[2] = new Car("Ауди",
+        cars[2] = new transport.Car("Ауди",
                 "A8 50 L TDI quattro",
                 3.0, "Черный",
                 2020, "Германия",
@@ -27,14 +25,14 @@ public class Main {
                 5, false,
                 "Передний", null,null );
 
-        cars[3] = new Car("KIA", "Sportage",
+        cars[3] = new transport.Car("KIA", "Sportage",
                 2.4, "Красный",
                 2018, "Южная Корея",
                 "a333aaa", "Седан"
                 , 5, false,
                 "Передний", null,null);
 
-        cars[4] = new Car("Hyundai", "Avante",
+        cars[4] = new transport.Car("Hyundai", "Avante",
                 1.6, "Оранжевый",
                 2016, "Южная Корея",
                 "a999aa", "Седан",
@@ -50,7 +48,7 @@ public class Main {
 
     }
 
-    public static void info(Car car) {
+    public static void info(transport.Car car) {
 
         System.out.println(car.getBrand() + " " + car.getModel() +
                 ", " + car.getProductionYear() +
